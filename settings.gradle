@@ -1,1 +1,1 @@
-include ':app', ':mpu6050'
+include ':app', ':mpu6050-release', ':mpu6050-debug', ':mpu6050'

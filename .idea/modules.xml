@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/mpu6050/mpu6050.iml" filepath="$PROJECT_DIR$/mpu6050/mpu6050.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mpu6050-debug/mpu6050-debug.iml" filepath="$PROJECT_DIR$/mpu6050-debug/mpu6050-debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mpu6050-release/mpu6050-release.iml" filepath="$PROJECT_DIR$/mpu6050-release/mpu6050-release.iml" />
       <module fileurl="file://$PROJECT_DIR$/mpu6050test.iml" filepath="$PROJECT_DIR$/mpu6050test.iml" />
     </modules>
   </component>
