@@ -1,9 +1,10 @@
 # mpu6050test
 This driver supports Invensense <a href='https://www.invensense.com/products/motion-tracking/6-axis/mpu-6050/'>MPU6050</a> 6 axis IMU sensor.
+
 <a href='https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf'>Datasheet</a>\
 <a href='https://www.invensense.com/wp-content/uploads/2015/02/MPU-6000-Register-Map1.pdf'>I2C register map</a>
 
-If you're Korean please visit <a href='www.mechasolution'>our website</a> check our <a href='http://mechasolution.com/shop/goods/goods_view.php?goodsno=543077&category=048'>AndroidThings Kit</a>. we provide <a href='https://github.com/mechasolution/AndroidThingsTextBook'>textbook</a> and code in github.
+If you're Korean please visit <a href='www.mechasolution'>our website</a> check our <a href='http://mechasolution.com/shop/goods/goods_view.php?goodsno=543077&category=048'>AndroidThings Kit</a>. we provide <a href='https://github.com/mechasolution/AndroidThingsTextBook'>textbook</a> and project code in github.
 
 NOTE: these drivers are not production-ready. They are offered as sample implementations of Android Things user space drivers for common peripherals as part of the Developer Preview release. There is no guarantee of correctness, completeness or robustness.
 
