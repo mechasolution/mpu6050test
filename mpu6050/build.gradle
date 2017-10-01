@@ -1,4 +1,17 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+    repoName  = 'androidthings'
+    userOrg = 'mechasolution'
+    groupId = 'com.mechasolution'
+    artifactId = 'mpu6050'
+    publishVersion = '0.1'
+    desc = 'mpu6050 driver for AndroidThings provided by mechasolution'
+    website = 'https://github.com/mechasolution/mpu6050test'
+    issueTracker = "https://github.com/mechasolution/mpu6050test/issues"
+    repository = "https://github.com/mechasolution/mpu6050test.git"
+}
 
 android {
     compileSdkVersion 26

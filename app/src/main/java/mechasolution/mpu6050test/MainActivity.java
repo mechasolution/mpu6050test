@@ -9,6 +9,7 @@ import java.io.IOException;
 import mechasolution.mpu6050.mpu6050;
 
 public class MainActivity extends Activity {
+    private static final String TAG = MainActivity.class.getSimpleName();
     /*
         I2cDevice mDevice;
         Thread mThread = new Thread() {
@@ -46,7 +47,6 @@ public class MainActivity extends Activity {
             return (short) (((a << 8) & 0xff00) | (b & 0x00ff));
         }
     */
-    private static final String TAG = MainActivity.class.getSimpleName();
 
     mpu6050 mMpu = new mpu6050();
     Thread mThread = new Thread() {
@@ -84,12 +84,9 @@ public class MainActivity extends Activity {
         */
         try {
             mMpu.open();
-            Log.i(TAG, String.format("%f", mMpu.SENSOR_RESOLUTION));
         } catch ( IOException e ) {
             e.printStackTrace();
         }
         mThread.start();
     }
 }
-
-//https://www.google.co.kr/search?q=%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C+%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC+%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0+%EA%B7%B8%EB%9E%98%EB%93%A4&oq=%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C+%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC+%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0+%EA%B7%B8%EB%9E%98%EB%93%A4&aqs=chrome..69i57.7968j0j7&sourceid=chrome&ie=UTF-8

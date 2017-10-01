@@ -28,5 +28,6 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
     provided 'com.google.android.things:androidthings:0.5.1-devpreview'
-    compile project(':mpu6050')
+    //compile project(':mpu6050')
+    compile 'com.mechasolution:mpu6050:0.1'
 }
