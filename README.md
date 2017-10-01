@@ -13,17 +13,17 @@ NOTE: these drivers are not production-ready. They are offered as sample impleme
 To use the mpu6050 driver, simply add the line below to your project's build.gradle. The package hasn't linked to Jcenter yet, so you need to add them until the package is linked to Jcenter.
 ```
 allprojects {
-  repositories {
-    jcenter()
-    maven { url "https://dl.bintray.com/mechasolution/androidthings/" }
-  }
+    repositories {
+        jcenter()
+        maven { url "https://dl.bintray.com/mechasolution/androidthings/" }
+    }
 }
 ```
 alos to your app's build.gradle, where <version> matches the last version of the driver available on <a href='https://bintray.com/mechasolution/androidthings/mpu6050/_latestVersion'>Jcenter</a>.
 
 ```
 dependencies {
-  compile 'com.mechasolution:mpu6050:<version>'
+    compile 'com.mechasolution:mpu6050:<version>'
 }
 ```
 
@@ -35,13 +35,13 @@ import mechasolution.mpu6050.mpu6050;
 mpu6050 mMpu = new mpu6050();
   
 try {
-  mMpu.open();
+    mMpu.open();
 } catch ( IOException e ) { e.printStackTrace(); }
   
 try {
-  Log.i("Acel", String.format("%f \t %f \t %f", mMpu.getAccelX(), mMpu.getAccelY(), mMpu.getAccelZ()));
-  Log.i("Temp", String.format("%f", mMpu.getTemp()));
-  Log.i("Gyro", String.format("%f \t %f \t %f", mMpu.getGyroX(), mMpu.getGyroY(), mMpu.getGyroZ()));
+    Log.i("Acel", String.format("%f \t %f \t %f", mMpu.getAccelX(), mMpu.getAccelY(), mMpu.getAccelZ()));
+    Log.i("Temp", String.format("%f", mMpu.getTemp()));
+    Log.i("Gyro", String.format("%f \t %f \t %f", mMpu.getGyroX(), mMpu.getGyroY(), mMpu.getGyroZ()));
 } catch ( IOException e ) { e.printStackTrace(); }
 ```
 
