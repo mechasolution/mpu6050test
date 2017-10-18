@@ -10,16 +10,7 @@ NOTE: these drivers are not production-ready. They are offered as sample impleme
 
 ## How to use the driver
 ### Gradle dependency
-To use the mpu6050 driver, simply add the line below to your project's build.gradle. The package hasn't linked to Jcenter yet, so you need to add them until the package is linked to Jcenter.
-```
-allprojects {
-    repositories {
-        jcenter()
-        maven { url "https://dl.bintray.com/mechasolution/androidthings/" }
-    }
-}
-```
-alos to your app's build.gradle, where <version> matches the last version of the driver available on <a href='https://bintray.com/mechasolution/androidthings/mpu6050/_latestVersion'>Jcenter</a>.
+To use the mpu6050 driver, simply add the line below to your project's build.gradle. where <version> matches the last version of the driver available on <a href='https://bintray.com/mechasolution/androidthings/mpu6050/_latestVersion'>Jcenter</a>.
 
 ```
 dependencies {
