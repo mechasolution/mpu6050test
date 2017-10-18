@@ -1,4 +1,4 @@
-# mpu6050test
+# MPU6050 driver for Android Things
 This driver supports Invensense <a href='https://www.invensense.com/products/motion-tracking/6-axis/mpu-6050/'>MPU6050</a> 6 axis IMU sensor.
 
 <a href='https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf'>Datasheet</a>\
